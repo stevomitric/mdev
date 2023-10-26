@@ -1,0 +1,414 @@
+:root {
+    --primary1: #3d5a80;
+    --primary2-old: #98c1d9;
+    --primary2: #aac8da;
+    --primary3: #e0fbfc;
+    --secondary1: #ee6d4d;
+    --bg1: #ffffff;
+}
+
+html, body, html * {
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+}
+path {
+    fill: none;
+}
+
+
+.bg-primary1 {
+    background-color: var(--primary1);
+}
+.text-secondary1 {
+    color: var(--secondary1);
+}
+
+.overlay {
+    background: var(--primary1);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+
+.center-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -64px;
+    margin-top: -64px;
+}
+
+.center-abs {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: auto;
+}
+
+.center {
+    width: 1000px;
+    margin: auto;
+}
+
+.container-content {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding-bottom: 100px;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.h3-text {
+    color: var(--primary2);
+    font-size: xx-large;
+}
+
+ul.nav-top {
+    position: fixed;
+    top: 0;
+    left:0;
+    right:0;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 36px;
+    overflow: hidden;
+    z-index: 10;
+    
+
+    /* Add the blur effect */
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    background-color: rgba(61, 90, 128, .8);
+    transition: 0.2s ease-in;
+}
+ul.addbox {
+    box-shadow: 5px 10px 8px #314a69;
+}
+  
+li {
+    float: left;
+}
+.right {
+    float: right;
+}
+  
+a.nav-top-item {
+    font-family: "Roboto Mono", monospace;
+    font-size: 14px;
+    display: block;
+    color: var(--primary2);
+    text-align: center;
+    padding: 12px 18px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 600 !important;
+    transition: 0.2s ease-in;
+}
+li span {
+    font-family: "Roboto Mono", monospace;
+    color: white;
+    font-weight: 600 !important;
+}
+  
+a:hover:not(.active) {
+    color: white;
+}
+a.active:hover {
+    border-color: var(--primary3);
+    color: var(--primary3);
+    cursor: pointer;
+    background-color: rgba(255,255,255,0.05);
+}
+
+a.active {
+    font-family: "Roboto Mono", monospace;
+    font-weight: 600 !important;
+    border: var(--secondary1) solid 2px;
+    border-radius: 10px;
+    color: var(--secondary1);
+    padding: 12px 18px;
+    transition: 
+    0.2s ease-in;
+}
+
+ul.nav-right {
+    width: "100%";
+    height: auto;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 36px;
+    overflow: hidden;
+    z-index: 10;
+
+}
+ul.nav-right > li {
+    width: 100%;
+    padding-top: 3vh;
+}
+
+a.nav-right-item {
+    font-family: "Roboto Mono", monospace;
+    font-size: 4vw;
+    color: var(--primary2);
+    text-align: center;
+    padding: 1vw 18px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 600 !important;
+    transition: 0.2s ease-in;
+}
+
+
+.menu-right {
+    position: fixed;
+    width: 50vw;
+    height: 100vh;
+    top:0;
+    left:110vw;
+    z-index: 10;
+    background-color: #314a69;
+}
+
+.menu-left {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top:0;
+    left:0;
+    z-index: 9;
+    /* Add the blur effect */
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    transition: 0.2s ease-in;
+}
+
+.img-logo {
+    height: 64px;
+    width: 64px;
+}
+
+
+.text-1 {
+    font-size: large;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 1000;
+    color: var(--secondary1);
+}
+.text-2 {
+    font-size: large;
+    font-family: "Roboto", sans-serif;
+    color: var(--primary2);
+    font-weight: 300;
+}
+
+#text-intro4 {
+    width: 60%; text-align: left;
+}
+
+h1 {
+    font-family: "Roboto", sans-serif;
+    color: var(--primary3);
+    font-size: 100px;
+    margin: 0;
+}
+h2 {
+    font-family: "Roboto", sans-serif;
+    color: var(--primary2);
+    font-size: 70px;
+    margin: 0;
+}
+h4 {
+    font-family: "Roboto", sans-serif;
+    color: var(--primary3);
+    font-size: x-large;
+}
+
+h3 {
+    font-family: "Roboto", sans-serif;
+    color: var(--primary3);
+    width:100%;
+    text-align:left;
+    border-bottom: 1px solid var(--secondary1); line-height:0.1em; margin:10px 0 20px;
+    font-size: 36px;
+    margin: 0;
+}
+h3 span { background:var(--primary1); padding:0 10px; }
+
+.fs-num {
+    font-size: 23px;
+}
+
+.left-fixed {
+    position: fixed;
+    width: 100px;
+    height: auto;
+    left: 0px;
+    bottom: 0px;
+    border: #3d5a80 solid 1px;
+}
+
+.left-icon {
+    color: var(--secondary1);
+    font-size: 32px;
+    position: relative;
+    margin-left: -10px;
+    left: 36px;
+    margin-bottom: 20px;
+    transition: 0.2s ease-in;
+}
+div.left-icon {
+    left: 32px;
+}
+
+.left-icon:hover {
+    left: 40px;
+    cursor: pointer;
+    color: var(--primary3);
+}
+
+.right-fixed {
+    position: fixed;
+    width: 100px;
+    height: auto;
+    right: 0px;
+    bottom: 0px;
+    border: #3d5a80 solid 1px;
+}
+
+.right-text {
+    font-family: "Roboto Mono", monospace;
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    color: var(--secondary1);
+    margin-bottom: 20px;
+    left: 25px;
+    position: relative;
+    transition: 0.2s ease-in;
+}
+
+.right-text:hover {
+    cursor: pointer;
+    color: var(--primary3);
+    left: 20px;
+}
+
+
+.image-container:hover {
+    margin-top: 10px;
+}
+
+.image-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(238, 109, 77, .3);
+    border-radius: 10px;
+    transition: 0.2s ease-in;
+}
+.image-overlay:hover {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(238, 109, 77, .05);
+    border-radius: 10px;
+}
+
+
+
+
+
+.center-right {
+    text-align: right;
+    width: 100%;
+}
+.center-text {
+    text-align: center;
+    width: 100%;
+}
+
+
+.project-icons {
+    position: relative;
+    top: 0;
+    color: var(--primary3);
+    font-size: 150%;
+    transition: 0.2s ease-in;
+}
+.project-tags {
+    color: var(--primary2);
+    font-family: "Roboto mono", monospace;
+}
+.project-icons:hover {
+    color: var(--secondary1);
+    top: -5px;
+    cursor: pointer;
+}
+
+.video-container {
+    border-radius: 10px;
+    margin-left: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.9);
+}
+  
+
+.project-row p {
+    transition: 0.2s ease-in;
+}
+
+
+.td-n {
+    text-decoration: none;
+}
+
+.hover-push-up {
+    position: relative;
+    top: 0px;
+    transition: top 0.2s ease-in;
+}
+.hover-push-up:hover {
+    top: -5px;
+}
+
+.show {
+    opacity: 1;
+}
+
+
+
+.video-overlay {
+    border-radius: 10px; position: absolute; top:0; left: 0; opacity: 0; width: 100%; height: 100%; overflow: hidden;
+    transition: all .2s ease-in;
+}
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+}
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    
+}
+   
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--primary2); 
+    border-radius: 10px;
+}
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary1); 
+}
+
+.contact-div {
+    text-align: center; padding-left: 200px; padding-right: 200px;
+}
+.text-credits {
+    font-size: 80%;
+}
