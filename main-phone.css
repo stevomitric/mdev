@@ -1,0 +1,373 @@
+@media (min-aspect-ratio: 1/1) {
+    #bars-menu {
+        display: none;
+    }
+    
+    .left-about {
+        width: 50%; float: left;
+    }
+    .right-about {
+        width: 50%; float: left;height: auto;
+    }
+    .image-border {
+        position: relative;
+        width: 250px;
+        height: 350px;
+        top: 40px;
+        left: 50%;
+        margin-left: -105px;
+        margin-top: -20px;
+        border: var(--secondary1) 3px solid;
+        border-radius: 10px;
+        background-color: rgba(238, 109, 77, .1);;
+    }
+    
+    .image-container {
+        width: 100%;
+        height: 100%;
+        margin-left: -20px;
+        margin-top: 20px;
+        background-image: url("images/me.jpg");
+        background-repeat: no-repeat;
+        background-size: 250px ;
+        border-radius: 10px;
+        transition: 0.2s ease-in;
+    }
+    .project-row {
+        padding-top: 30px;
+        overflow: hidden;
+        height: 350px;
+        width: 100%;
+    }
+    .project-row > div {
+        float: left;
+        width: 25%;
+        margin: 3px;
+        padding-left: 35px;
+        padding-right: 35px;
+        background-color: #314a69;
+        border-radius: 10px;
+        transition: 0.2s ease-in;
+        height: 270px;
+    }
+    .project-row > div:hover {
+        margin-top:-10px;
+        cursor: pointer;
+    }
+    
+    .project-row div:hover p {
+        color: var(--primary3);
+    }
+
+    .fs-42 {
+        font-size: 42px;
+    }
+    .fs-m {
+        font-size: medium;
+    }
+    .video-overlay:hover {
+        opacity: .2;
+    }
+    .project-container {
+        width: 100%;
+        overflow: hidden;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .project-img {
+        position:relative;
+        z-index: -1;
+        width: 50%;
+        float: left;
+        
+        background-repeat: no-repeat;
+        background-size: 100%;
+        border-radius: 10px;
+        height: 350px;
+    }
+    .project-div-right {
+        width: 50%;
+        float: left;
+        display: flex;
+        align-items: center;
+        height: 350px;
+    }
+    .fs-80 {
+        font-size: 80%;
+    }
+    .project-div-text-inner-right {
+        color: var(--primary2);
+        padding: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+        text-align: right;
+    }
+    .project-div-text-right {
+        width: 110%;
+        background-color: #314a69;
+        margin-left: -40px;
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+    }
+    .bg-mat-judge {
+        background-image: url("images/mat-judge.png");
+    }
+    .bg-circuits {
+        background-image: url("images/circuitS.png");
+    }
+    .project-div-text-left {
+        width: 110%;
+        background-color: #314a69;
+        margin-left: -10px;
+        display: flex;
+        border-radius: 10px;
+    }
+    
+    .project-div-text-inner-left {
+        color: var(--primary2);
+        padding: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+        text-align: left;
+    }
+
+    .top-offset-50 {
+        position: relative;
+        margin-top: -50px;
+    }
+}
+
+@media (max-aspect-ratio: 1/1) {
+    .center {
+        width: 90%;
+        margin: auto;
+    }
+
+    h1 {
+        font-size: 15vw;
+    }
+    h2 {
+        font-size: 8vw;
+        padding-bottom: 1vh;
+    }
+    h3 {
+        font-family: "Roboto", sans-serif;
+        color: var(--primary3);
+        width:100%;
+        text-align:left;
+        border-bottom: 1px solid var(--secondary1); line-height:0.1em; margin:10px 0 20px;
+        font-size: 7vw;
+        margin: 0;
+    }
+    h3 span { background:var(--primary1); padding:0 10px; }
+
+    .text-2 {
+        font-size: 5vw;
+    }
+    .text-1 {
+        font-size: 5vw;
+    }
+
+    #text-intro4 {
+        width: 80%;
+        text-align: left;
+    }
+
+    a.active {
+        font-size: 4vw;
+        padding: 3vw;
+    }
+    .left-fixed {display: none;}
+    .right-fixed {display: none;}
+
+    .container-content {
+        margin-top: -5vh;
+        padding-bottom: 100px;
+    }
+    .img-logo {
+        height: 12vw;
+        width: 12vw;
+        padding: 1vmax;
+    }
+    .m-exp {
+        display: none;
+    }
+    .right-menu {
+        display: block;
+        color: var(--primary2);
+        padding: 2vmax;
+        margin-top: 10px;
+        text-decoration: none;
+        font-size: 6vw !important;
+    }
+    .left-about {
+        width: 100%; float: left;
+    }
+    .right-about {
+        width: 100%; float: left;
+    }
+    .image-border {
+        position: relative;
+        width: 60vw;
+        height: 80vw;
+        top: 40px;
+        left: 50%;
+        margin-left: -30vw;
+        margin-top: -5vw;
+        border: var(--secondary1) 3px solid;
+        border-radius: 10px;
+        background-color: rgba(238, 109, 77, .1);;
+    }
+    
+    .image-container {
+        width: 100%;
+        height: 100%;
+        margin-left: -3vw;
+        margin-top: 3vw;
+        background-image: url("images/me.jpg");
+        background-repeat: no-repeat;
+        background-size: 60vw;
+        border-radius: 10px;
+        transition: 0.2s ease-in;
+    }
+    .fs-num {
+        font-size: 6vw;
+    }
+    .padding-title-5 {
+        width: 100%;
+        height: 5vw;
+    }
+    .padding-title-15 {
+        width: 100%;
+        height: 15vw;
+    }
+    .contact-div {
+        text-align: center; padding-left: 3vw; padding-right: 3vw;
+    }
+    .p-5 {
+        padding: 10vw !important;
+    }
+    .p-3 {
+        padding: 6vw !important;
+    }
+    .text-credits {
+        font-size: 4vw;
+    }
+    .project-row {
+        margin-top: 5vw;
+        position: relative;
+        padding-bottom: 5vw;
+        overflow: hidden;
+        height: auto;
+        width: 100%;
+    }
+    .project-row > div {
+        position: relative;
+        width: 77vw;
+        margin-bottom: 7vw;
+        background-color: #314a69;
+        border-radius: 3vw;
+        transition: 0.2s ease-in;
+        height: auto;
+    }
+    .project-row > div:hover {
+        cursor: pointer;
+    }
+
+    .fs-42 {
+        font-size: 12vw;
+    }
+
+    .fs-m {
+        font-size: 4vw;
+    }
+    .project-tags {
+        font-size: 4vw;
+    }
+    .center-text {
+        font-size: 6vw;
+    }
+    .project-img {
+        position: absolute;
+        top:0;
+        left:0;
+        z-index: -1;
+        width: 100%;
+         
+        background-repeat: no-repeat;
+        background-size: 100%;
+        border-radius: 10px;
+        height: 60vw;
+    }
+    .project-container {
+        position: relative;
+        width: 100%;
+        height: 65vw;
+        overflow: visible;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .project-div-right {
+        width: 100%;
+        height: 70%;
+        display: flex;
+        align-items: center;
+    }
+    .fs-80 {
+        font-size: 4vw;
+    }
+    .fs-mobile-x {
+        font-size: 6vw;
+    }
+    .project-div-text-inner-right {
+        color: var(--primary2);
+        padding-left: 2vw;
+        padding-right: 2vw;
+        text-align: right;
+        font-size: 3vw;
+    }
+    .project-div-text-right {
+        width: 100%;
+        padding-right: 2vw;
+        background-color: #314a69;
+        display: flex;
+        align-items: center;
+        border-radius: 3vw
+    }
+    .bg-mat-judge {
+        background-image: url("images/mat-judge-blur.png");
+    }
+    .bg-circuits {
+        background-image: url("images/circuitS-blur.png");
+    }
+    .project-div-text-left {
+        width: 100%;
+        background-color: #314a69;
+        padding-left: 2vw;
+        display: flex;
+        border-radius: 3vw;
+    }
+    
+    .project-div-text-inner-left {
+        color: var(--primary2);
+        padding-left: 2vw;
+        padding-right: 2vw;
+        text-align: left;
+        font-size: 3vw;
+    }
+    .project-icons {
+        font-size: 5vw;
+    }
+
+    .top-offset-50 {
+        position: relative;
+        margin-top: -5px;
+    }
+}
+
+@media (max-aspect-ratio: 1/1) and (min-width: 700px) {
+    .mobile-zoom {
+        zoom: 2;
+    }
+}
