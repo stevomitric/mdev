@@ -145,13 +145,13 @@ function hideRightMenu() {
 }
 
 $(document).ready(function() {
-    //animateHomeScreen();
+    animateHomeScreen();
 
     setTimeout(() => {
         $("#main").attr("hidden", false);
         animateFontPage();
         sa('JS_FRONT_PAGE_LOAD')
-    },0);// 3500);
+    }, 3500);
     //animateFontPage();
 
     // pusti video kada hoverujes preko projekta
