@@ -15,7 +15,7 @@ function expoDecrease(iter, max) {
     return 5;
 }
 
-function startDrawingPath(elem){
+function startDrawingPath(elem, func=expoDecrease){
     let orig = $(elem)[0];
     let length = 0;
 
@@ -24,7 +24,7 @@ function startDrawingPath(elem){
 
     let timer = setInterval( function() {
         let pathLength = orig.getTotalLength();
-        length += expoDecrease(length, pathLength);
+        length += func(length, pathLength);
         orig.style.strokeDasharray = [length,pathLength].join(' ');
         if (length >= pathLength) stopTimer(elem);
     } ,1000/drawFPS);

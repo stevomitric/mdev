@@ -4,6 +4,7 @@
     --primary2: #aac8da;
     --primary3: #e0fbfc;
     --secondary1: #ee6d4d;
+    --secondary2: #314a69;
     --bg1: #ffffff;
 }
 
@@ -300,6 +301,11 @@ div.left-icon {
 
 .image-container:hover {
     margin-top: 10px;
+}
+
+.justify {
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .image-overlay {

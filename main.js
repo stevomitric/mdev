@@ -70,6 +70,19 @@ function animateFontPage() {
 }
 
 function scrolled() {
+    let jobElem = ["j-rect1", "j-rect2", "j-rect3", "j-rect4"]
+    for (let elem of jobElem) {
+        let bottomY = $("#"+elem)[0].getBoundingClientRect().bottom;
+        let t = $(window).height();
+        //console.log(bottomY)
+        if (!bottomY) continue;
+
+        if (t-bottomY > 0 || (elem =="j-rect1" && t-bottomY >= -800)) {
+            //console.log("anim: ", elem)
+            scheduleAnimate(jobElem.indexOf(elem));
+        }
+    }
+
     $('.anim').each(function () {
         var y = $(this)[0].getBoundingClientRect().top;
         var t = $(window).height();
@@ -89,11 +102,12 @@ function scrolled() {
     if (screen_height-top > 150 && window.innerWidth/window.innerHeight > 1)
         $("#manage-width")[0].style.width = width+"%";
 
+    
     // nav menu
-    if (window.scrollY < 50 || prevScroll > window.scrollY) {
+    if (window.scrollY < 50 || prevScroll-40 >= window.scrollY) {
         $("#mainmenu")[0].style.top = "0";
     }
-    else if (window.scrollY >= 100) {
+    else if (window.scrollY >= 100 && prevScroll <= window.scrollY) {
         let h = Math.round($("#mainmenu")[0].getBoundingClientRect().height) + 10;
         $("#mainmenu")[0].style.top = "-"+h+"px";
     }
@@ -111,7 +125,12 @@ function scrolled() {
 
     a_scrolled();
 
-    prevScroll = window.scrollY;
+    if (prevScroll < window.scrollY) {
+        prevScroll = window.scrollY;
+    }
+    if (prevScroll-40 > window.scrollY) {
+        prevScroll = window.scrollY+40;
+    }
 }
 
 function showRightMenu() {
@@ -126,13 +145,13 @@ function hideRightMenu() {
 }
 
 $(document).ready(function() {
-    animateHomeScreen();
+    //animateHomeScreen();
 
     setTimeout(() => {
         $("#main").attr("hidden", false);
         animateFontPage();
         sa('JS_FRONT_PAGE_LOAD')
-    }, 3500);
+    },0);// 3500);
     //animateFontPage();
 
     // pusti video kada hoverujes preko projekta

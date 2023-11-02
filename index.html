@@ -19,6 +19,7 @@
         <script src="main.js"></script>
         <script src="typewriter.js"></script>
         <script src="svgdraw.js"></script>
+        <script src="journey.js"></script>
 
         <title>MitricDEV - Personal Portfolio</title>
 
@@ -33,10 +34,6 @@
             <svg id="loadbar-front" class="center" height="10" width="0" style=" display: none; margin-top: 80px; margin-left: -200px;" >
                 <path d="M0 0 L400 0" stroke-width="10" stroke="var(--secondary1)"/>
             </svg>
-
-            <p id="motto-front1" class="hidden h3-text center" style="display: none; margin-top: 90px; margin-left: -190px;">Efficient.</p>
-            <p id="motto-front2" class="hidden h3-text center" style="display: none;margin-top: 90px; margin-left: -60px;">Elegant.</p>
-            <p id="motto-front3" class="hidden h3-text center" style="display: none;margin-top: 90px; margin-left: 70px;">Human.</p>
 
             <svg class="center-abs" height="400" width="400" style="margin-top: -120px; margin-left: -90px;">
                 <path class="hidden" id="f-line1"  stroke-width="6" stroke="var(--secondary1)" d="M40,40 h100 a20,20 0 0 1 20,20" />
@@ -96,7 +93,7 @@
 
             <!-- Right email -->
             <div class="right-fixed hidden appear">
-                <p class="right-text">stevo@mitricdev.com</p>
+                <p class="right-text">stevomitric2000@gmail.com</p>
                 <div style="border: 1px solid var(--secondary1); height: 100px; width: 0px; position: relative; left: 50px;"></div>
             </div>
 
@@ -106,7 +103,7 @@
                         <p id="text-intro1" class="text-1 pl-2 hidden">Hi, my name is</p>
                         <h1 id="text-intro2" class="hidden">Stevo Mitrić.</h1>
                         <h2 id="text-intro3" class="hidden">I'm a software engineer.</h2>
-                        <p id="text-intro4" class="text-2 hidden">Currently studying at School of Electrical Engineering, University of Belgrade, I like challenging myself with all kinds of different projects using latest, cutting-edge technologies.</p>
+                        <p id="text-intro4" class="text-2 hidden">Currently pursuing my Masters degree in Software Engineering at University of Belgrade, I like challenging myself with all kinds of different projects using latest, cutting-edge technologies.</p>
                         <br>
                         <a id="text-intro5" onClick='document.getElementById("div-proj").scrollIntoView({behavior: "smooth"});' class="active hidden">Check out my projects!</a>
                     </div>
@@ -119,13 +116,13 @@
                         <br>
                         <div style="padding-left: 20px;">
                             <br>
-                            <p class="text-2">
+                            <p class="text-2 justify">
                                 Hello! My name is Stevo and I enjoy creating all kinds of stuff. My interest in programming started back in 2012 when i was only <span class="text-1"> 12 years old</span>, building mods for at the time, triple-A games, and as it turns out, if a 12 year-old can create a <span class="text-1">3D model of himself</span> and integrate it in a game, anyone can!
                             </p>
-                            <p class="text-2">
+                            <p class="text-2 justify">
                                 Starting at that age, i had no problem adapting to vast number of different programming languages. Fast-forward to today, I’ve had the experience working on many general-purpose scripts, automation apps, UI design and lots of web-scraping tools. My main focus these days is building & maintaing a Video <span class="text-1">CMS</span> for a VOD company based in US.
                             </p>
-                            <p class="text-2">
+                            <p class="text-2 justify">
                                 In my free time, I compete in a variety of programming contests (such as those on CodeForces), so everything i do, i do with efficiency as a top priority.
                             </p>
                         </div>
@@ -142,6 +139,110 @@
 
                 <div class="padding-title-15"></div>
 
+                <div class="anim" style=" padding-bottom: 100px;">
+                    <div class="job-begin hide-mobile">
+                        <svg class="center"  style="height: 1300;" >
+                            <circle stroke-linecap="round" class="hidden" id="j-circle1" cx="480" cy="50" r="40" stroke="var(--secondary1)" stroke-width="20" fill="none" />
+                            <path class="hidden" id="j-line1" stroke-linecap="round" stroke-width="20" stroke="var(--secondary1)" d="M480 90 L480 250 Q480 280 510 280 L550 280"/>
+                            <text class="hidden" id="j-text-2018" x="480" y="190" stroke="var(--secondary1)" style="writing-mode: vertical-lr;">2018</text>
+                            <path class="hidden" id="j-line1a" stroke-linecap="round" stroke-width="6" stroke="var(--secondary1)" d="M557 280 L557 120"/>
+                            <path class="hidden" id="j-line1b" stroke-linecap="round" stroke-width="6" stroke="var(--secondary1)" d="M557 280 L557 440"/>
+                            <g>
+                                <rect x="560" id="j-rect1" fill="var(--secondary2)" y="100" width="0" height="360" rx="15" />
+                                <text style="font-size: 20; opacity: 0" fill="#ffffff" class="mono hidden" id="j-text-r1" x="585" y="140">International Olympiad</text>
+                                <text style="font-size: 13; opacity: 0" fill="#cccccc" class="mono hidden" id="j-text-r2" x="585" y="163">IOI 2018 - Tsukuba, Japan</text>
+                                <text style="font-size: 14; opacity: 0" fill="#ffffff" class="mono hidden" id="j-text-r3" x="585" y="190">
+                                    <tspan x="585" dy="1.2em">As a member of the Bosnian national team,</tspan>
+                                    <tspan x="585" dy="1.2em">I participated at IOI 2018, Tsukuba, Japan.</tspan>
+                                    <tspan x="585" dy="1.2em">I got to meet some of the most amazing and</tspan>
+                                    <tspan x="585" dy="1.2em">talented people and I learned a lot of</tspan>
+                                    <tspan x="585" dy="1.2em">new stuff along the way.</tspan>
+                                </text>
+                                <image onclick="openImages('IOI', 2)" style="opacity: 0" id="j-img-r1" x="640" y=" 310" href="./images/thumb/ioi2.png" height="110" width="80"/>
+                                <image onclick="openImages('IOI', 3)" style="opacity: 0" id="j-img-r2" x="730" y=" 310" href="./images/thumb/ioi1.png" height="110" width="80"/>
+                            </g>
+
+
+                            <path class="hidden" id="j-line2" stroke-linecap="round" stroke-width="20" stroke="var(--secondary1)" d="M480 250 L480 500 Q480 530 450 530 L410 530"/>
+                            <text class="hidden" id="j-text-2021" x="480" y="400" stroke="var(--secondary1)" style="writing-mode: vertical-lr;">2021</text>
+                            <path class="hidden" id="j-line2a" stroke-linecap="round" stroke-width="6" stroke="var(--secondary1)" d="M403 530 L403 370"/>
+                            <path class="hidden" id="j-line2b" stroke-linecap="round" stroke-width="6" stroke="var(--secondary1)" d="M403 530 L403 690"/>
+                            <g>
+                                <rect x="400" id="j-rect2" fill="var(--secondary2)" y="350" width="0" height="360" rx="15" />
+                                <text style="font-size: 20; opacity: 0" fill="#ffffff" class="mono hidden" id="j-text-l1" x="150" y="390">Teaching assistant</text>
+                                <text style="font-size: 13; opacity: 0" fill="#cccccc" class="mono hidden" id="j-text-l2" x="190" y="413">University of Belgrade</text>
+                                <text style="font-size: 14; opacity: 0" fill="#ffffff" class="mono hidden" id="j-text-l3" x="140" y="440">
+                                    <tspan x="120" dy="1.2em">As an undergraduate teaching assistant,</tspan>
+                                    <tspan x="140" dy="1.2em">I worked with students in a variety of</tspan>
+                                    <tspan x="140" dy="1.2em">different academic activities such as</tspan>
+                                    <tspan x="139" dy="1.2em">laboratory exercises and homeworks.</tspan>
+                                    <tspan x="145" dy="1.2em">I was assigned in Algorithms & Data</tspan>
+                                    <tspan x="115" dy="1.2em">structures, OOP and many more courses.</tspan>
+                                </text>
+                                <image onclick="openImages('TeachingAssistant', 1)" style="opacity: 0" id="j-img-l1" x="250" y="570" href="./images/thumb/ta2.png" height="110" width="80"/>
+                                <image onclick="openImages('TeachingAssistant', 2)" style="opacity: 0" id="j-img-l2" x="160" y="570" href="./images/thumb/ta1.png" height="110" width="80"/>
+                            </g>
+
+
+                            <path class="hidden" id="j-line3" stroke-linecap="round" stroke-width="20" stroke="var(--secondary1)" d="M480 500 L480 750 Q480 780 510 780 L550 780"/>
+                            <text class="hidden" id="j-text-2022" x="480" y="650" stroke="var(--secondary1)" style="writing-mode: vertical-lr;">2022</text>
+                            <path class="hidden" id="j-line3a" stroke-linecap="round" stroke-width="6" stroke="var(--secondary1)" d="M557 780 L557 620"/>
+                            <path class="hidden" id="j-line3b" stroke-linecap="round" stroke-width="6" stroke="var(--secondary1)" d="M557 780 L557 940"/>
+                            <g>
+                                <rect x="560" id="j-rect3" fill="var(--secondary2)" y="600" width="0" height="360" rx="15" />
+                                <text style="font-size: 20; opacity: 0" fill="#ffffff" class="mono hidden" id="j-text-r1b" x="585" y="640">Microsoft </text>
+                                <image style="opacity: 0" id="j-img-microsoft" x="700" y="623" href="./images/microsoft-logo.png" height="20" width="20"/>
+                                <text style="font-size: 13; opacity: 0" fill="#cccccc" class="mono hidden" id="j-text-r2b" x="585" y="663">Software Engineer Intern</text>
+                                <text style="font-size: 14; opacity: 0" fill="#ffffff" class="mono hidden" id="j-text-r3b" x="585" y="690">
+                                    <tspan x="585" dy="1.2em">Optimized and added new features in Havok.</tspan>
+                                    <tspan x="585" dy="1.2em">Developed new demos and tested performance</tspan>
+                                    <tspan x="585" dy="1.2em">impacts on different gaming platforms.</tspan>
+                                    <tspan x="585" dy="1.2em">Worked on the Particle System pipeline and</tspan>
+                                    <tspan x="585" dy="1.2em">improved its deterministic algorithm on CI</tspan>
+                                    
+                                </text>
+                                <image onclick="openImages('Microsoft', 2)" style="opacity: 0" id="j-img-r1b" x="640" y=" 810" href="./images/thumb/mdcs2.png" height="110" width="80"/>
+                                <image onclick="openImages('Microsoft', 1)" style="opacity: 0" id="j-img-r2b" x="730" y=" 810" href="./images/thumb/mdcs1.png" height="110" width="80"/>
+                            </g>
+                        
+                            <path class="hidden" id="j-line4" stroke-linecap="round" stroke-width="20" stroke="var(--secondary1)" d="M480 750 L480 1000 Q480 1030 450 1030 L410 1030"/>
+                            <text class="hidden" id="j-text-2023" x="480" y="900" stroke="var(--secondary1)" style="writing-mode: vertical-lr;">2023</text>
+                            <path class="hidden" id="j-line4a" stroke-linecap="round" stroke-width="6" stroke="var(--secondary1)" d="M403 1030 L403 870"/>
+                            <path class="hidden" id="j-line4b" stroke-linecap="round" stroke-width="6" stroke="var(--secondary1)" d="M403 1030 L403 1190"/>
+                            <g>
+                                <rect x="400" id="j-rect4" fill="var(--secondary2)" y="850" width="0" height="360" rx="15" />
+                                <text style="font-size: 20; opacity: 0" fill="#ffffff" class="mono hidden" id="j-text-l1b" x="300" y="890">Oracle</text>
+                                <image style="opacity: 0" id="j-img-oracle" x="270" y="873" href="./images/oracle-logo.png" height="20" width="20"/>
+                                <text style="font-size: 13; opacity: 0" fill="#cccccc" class="mono hidden" id="j-text-l2b" x="160" y="913">Software Engineering Intern</text>
+                                <text style="font-size: 14; opacity: 0" fill="#ffffff" class="mono hidden" id="j-text-l3b" x="140" y="940">
+                                    <tspan x="125" dy="1.2em">Worked on developing and testing Visual </tspan>
+                                    <tspan x="97" dy="1.2em">Studio Code extensions to enhance developer</tspan>
+                                    <tspan x="130" dy="1.2em">tooling for GraalVM, Micronaut and GCN </tspan>
+                                    <tspan x="110" dy="1.2em">in Typescript. Additionally, I was responsible </tspan>
+                                    <tspan x="92" dy="1.2em">for writing comprehensive tests within Jenkins </tspan>
+                                    <tspan x="250" dy="1.2em">automation platform.</tspan>
+                                </text>
+                                <image onclick="openImages('Oracle', 1)" style="opacity: 0" id="j-img-l1b"  x="150" y="1070" href="./images/thumb/oracle1.png" height="110" width="80"/>
+                                <image onclick="openImages('Oracle', 2)" style="opacity: 0" id="j-img-l2b" x="240" y="1070" href="./images/thumb/oracle2.png" height="110" width="80"/>
+                            </g>
+
+                        </svg> 
+
+
+
+                    </div>
+                    <div class="job-row" >
+                        <div class="job-left">
+
+                        </div>
+                        <div class="job-center">
+
+                        </div>
+                        <div class="job-right">
+
+                        </div>
+                    </div>
+                </div>
 
                 <div id="div-proj" class="hidden anim" style=" padding-bottom: 100px;">
                     <div style=" padding-top: 100px;">
@@ -298,6 +399,21 @@
                                 </div>
                             </a>
                         </div>
+
+                        <div class="p-3 d-r">
+                            <i class="fa fa-folder text-1  fs-42"></i>
+                            <a target="_blank" class="float-right td-n"> <i class="fa-solid fa-arrow-up-right-from-square text-2"></i> </a>
+                            <span class="hidden">-</span>
+                            <h4 class="fs-m">File share <i class="far fa-file pl-1 text-2"></i></h4>
+                            <p class="text-2 fs-m">
+                                FShare is a Python package that serves as a file sharing service over a local network. It utilizes Flask to create a local server on port 8000, allowing users to upload files and share them within the network..
+                            </p>
+                            <p class="project-tags">Flask - API</p>
+                            <a onclick="sa('FSHARE_GITHUB')" target="_blank" href="https://github.com/stevomitric/fshare">
+                                <div class="video-overlay">
+                                </div>
+                            </a>
+                        </div>
                     </div>
 
                 </div>
@@ -311,9 +427,9 @@
                     <div class="contact-div">
                         <p class="text-1 pl-2">03. What's next?</p>
                         <h2 class="text-intro3">Get in Touch  </h2>
-                        <p class="text-2">I'm always looking for new opportunities, and my inbox is always open. Whether you have a question or just want to say hi, I’ll do my best to get back to you! <span class="waving-hand">👋</span> </p>
+                        <p class="text-2">I'm constantly looking for new opportunities, and my inbox is always open. Whether you have a question or just want to say hi, I’ll do my best to get back to you! <span class="waving-hand">👋</span> </p>
                         <div class="p-5">
-                            <a onclick="sa('CONTACT_CLICK')" href="mailto: stevo@mitricdev.com" class="active td-n ">Say hello!  </a>
+                            <a onclick="sa('CONTACT_CLICK')" href="mailto: stevomitric2000@gmail.com" class="active td-n ">Say hello!  </a>
                         </div>
                     </div>
                 </div>
@@ -328,6 +444,17 @@
                 </div>
 
             </div>
+        </div>
+        <div class="menu-right" id="images-menu">
+            <div>
+                TEST
+            </div>
+        </div>
+        <div style="display: none; " class="menu-left" id="images-menu-blur" onclick="closeImages()">
+
+            <img id="image-menu-item" style="display: block; margin: auto; max-width: 70vw; max-height: 70vh; margin-top: 50px;" src="">
+            <span class="hover-pointer" style="display: block; text-align: center; margin-top: 50px; font-size: 30px;"> <i class="project-icons fa-solid fa-arrow-left" onclick="event.stopPropagation(); prevImage()"></i> &nbsp  &nbsp <i class="project-icons fa-solid fa-arrow-right" onclick="event.stopPropagation(); nextImage()"></i> </span>
+
         </div>
     </body>
 </html>
