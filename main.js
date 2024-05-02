@@ -77,7 +77,7 @@ function scrolled() {
         //console.log(bottomY)
         if (!bottomY) continue;
 
-        if (t-bottomY > 0 || (elem =="j-rect1" && t-bottomY >= -800)) {
+        if (t-bottomY > -200 || (elem =="j-rect1" && t-bottomY >= -600)) {
             //console.log("anim: ", elem)
             scheduleAnimate(jobElem.indexOf(elem));
         }
