@@ -1,9 +1,6 @@
 var prevScroll = 0;
 
 function animateHomeScreen() {
-    //$("#line-b-front").animate({
-    //    width: 240,
-    //}, 500);
     $("#im_logo").animate( {
         opacity:1,
     }, 1000);
@@ -32,7 +29,6 @@ function animateHomeScreen() {
 function animateFontPage() {
     // hide menu
     $("#over-div").hide();
-    //$("#nav-img")[0].style.marginLeft = '-10px';
     $("#nav-img").animate({marginLeft:0, opacity:1}, 500)
 
     // menu text
