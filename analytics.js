@@ -2,6 +2,7 @@ var A_SCROLL_1 = false;
 var A_SCROLL_2 = false;
 var A_SCROLL_3 = false;
 
+// Send analytics function.
 function sa(action) {
     if (window.location.href.indexOf("ignore-analytics") != -1)
         return;
